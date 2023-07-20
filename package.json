@@ -3,6 +3,7 @@
    "version":"1.0.0",
    "description":"My project description",
    "dependencies":{
+      "csv":"^1.0"
       "aiocsv": "^1.2.4",
       "aiofiles": "^23.1.0",
       "aiogram": "^2.25.1",
