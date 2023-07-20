@@ -4,6 +4,12 @@ from aiogram import Bot, Dispatcher, executor, types
 from aiogram.dispatcher.filters import Text
 from gitignore import token
 from background import keep_alive
+import os
+import aiohttp
+import asyncio
+import aiofiles
+from aiocsv import AsyncWriter
+from gitignore import headers, cookies
 
 bot = Bot(token=token)
 db = Dispatcher(bot)
