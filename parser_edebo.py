@@ -1,5 +1,5 @@
 # import requests
-# import csv
+import aiocsv
 import os
 import aiohttp
 import asyncio
