@@ -3,6 +3,7 @@ from parser_edebo import main
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.dispatcher.filters import Text
 from gitignore import token
+from background import keep_alive
 
 bot = Bot(token=token)
 db = Dispatcher(bot)
@@ -49,4 +50,5 @@ async def text_message(message: types.Message):
 
 
 if __name__ == '__main__':
+    keep_alive()
     executor.start_polling(db)
